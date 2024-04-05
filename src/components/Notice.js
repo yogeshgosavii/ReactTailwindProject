@@ -11,7 +11,7 @@ function Notice({ className,iconColor, icon, ...props }) {
     <>
       {isVisible && (
         <div className={`py-5 flex flex-col text-center sm:text-left sm:flex-row gap-2  px-4 w-full max-w-6xl mt-10 rounded-lg ${className}`}>
-          <div className='absolute w-full flex justify-end -translate-y-9 -translate-x-28 sm:hidden'>
+          <div className='absolute w-full flex justify-end -translate-y-9 -translate-x-10 sm:hidden'>
             <svg
               onClick={handleClose}
               className={`h-7 bg-green-100 w-fit text-gray-500 p-1.5 rounded-full  cursor-pointer `}

@@ -2,9 +2,12 @@ import React from 'react'
 
 function BorderedButton({text,className}) {
   return (
-    <button className={`border-2  justify-center items-center p-2 px-7 rounded-3xl ${className}`}>
+    <div className={`sm:border-2 p-2  rounded-3xl ${className}`}>
+      <p className=' text-end sm:text-center  w-full'>
       {text}
-    </button>
+      </p>
+
+    </div>
   )
 }
 

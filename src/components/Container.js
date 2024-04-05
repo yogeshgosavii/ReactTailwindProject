@@ -8,7 +8,6 @@ import peopleIcon from "../assets/peoples.png";
 import handShakeIcon from "../assets/handshake.png";
 import questionMessageIcon from "../assets/questionMessage.png"; // Changed quectionMessageIcon to questionMessageIcon
 import Button from './Button';
-import { text_color } from '../constants/constants';
 
 function Container({ marginTop = 20 }) {
   const getHelp = [
@@ -33,7 +32,7 @@ function Container({ marginTop = 20 }) {
   ];
 
   return (
-    <div className={`flex flex-1 h-full flex-col px-14  justify-center items-center w-screen py-3 mt-${marginTop} md:mt-${marginTop + 4}`}>
+    <div className={`flex flex-1 h-full flex-col px-4 md:px-14  justify-center items-center w-screen py-3 mt-20 lg:mt-24`}>
       <p className='text-[#2a82c5] cursor-pointer font-medium w-full text-start lg:pl-24'>Help Center</p>
       <h1 className='text-2xl w-full mt-5 lg:mt-0 text-center'>How can we help?</h1>
       <SearchInput/>
@@ -73,14 +72,14 @@ function Container({ marginTop = 20 }) {
           ))
         }
       </div>
-      <div className='bg-gray-100 mt-10 px-10 text-center md:text-start flex-col border flex md:flex-row items-center justify-between py-8 rounded-sm w-full'>
+      <div className='bg-gray-100 mt-10 px-20 max-w-screen-lg text-center md:text-start flex-col border flex md:flex-row items-center justify-between py-8 rounded-sm w-full'>
         <div className='w-full'>
           <p className='text-xl'>How are we doing?</p>
           <div className='mt-3'>
             Help improve the <span className='font-bold'>Paypal Help Center Experience</span> with quick message
           </div>
         </div>
-        <Button className={`h-fit mt-5 md:mt-0 text whitespace-nowrap bg-${text_color}`} text={"Take the survey"}/>
+        <Button className={`h-fit mt-5 md:mt-0 text whitespace-nowrap bg-blue-800`} text={"Take the survey"}/>
       </div>
     </div>
   );

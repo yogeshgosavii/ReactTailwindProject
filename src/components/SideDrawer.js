@@ -5,7 +5,7 @@ function SideDrawer({ setShowDrawer, showDrawer }) {
   return (
     <div>
       <div
-        className={`fixed inset-y-0 left-0 px-8 py-10 z-40 flex flex-col justify-between w-2/6/ md:w-1/2 lg:w-1/4 bg-blue-50 duration-300 ease-in-out ${
+        className={`fixed inset-y-0 left-0 px-8 py-10 z-40 flex flex-col justify-between w-48  sm:w-1/2 lg:w-1/4 bg-blue-50 duration-300 ease-in-out ${
           showDrawer ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
@@ -19,9 +19,9 @@ function SideDrawer({ setShowDrawer, showDrawer }) {
           {showDrawer &&
             <svg
             onClick={() => setShowDrawer(false)} // Corrected onClick handler
-            className={`h-8 w-28 ml-4 cursor-pointer sm:block translate-x-32 ${
+            className={`h-8 w-28 ml-4 cursor-pointer sm:block translate-x-16 sm:translate-x-32 ${
               showDrawer ? 'block' : 'hidden'
-            }`} // Corrected conditional class
+            }`} 
             viewBox="0 0 24 24"
             stroke="#ffffff"
             aria-label="Close drawer"

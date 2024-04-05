@@ -25,17 +25,17 @@ function Services({className}) {
         }
     ]
   return (
-    <div className={`${className} flex gap-8 flex-col md:flex-row`}>
+    <div className={`${className} flex gap-8 w-full flex-col md:flex-row`}>
         {
             services.map((service)=>{
                return(
-                <div key={service.serviceName} className={`cursor-pointer mx-auto max-w-[22rem] md:w-1/${services.length} bg-white rounded-xl border flex items-center border-gray-100 overflow-hidden shadow-sm md:shadow-md lg:shadow-xl px-5 py-2`}
+                <div key={service.serviceName} className={`cursor-pointer mx-auto w-full justify-center sm::max-w-[22rem] md:w-1/${services.length} bg-white rounded-xl border flex items-center border-gray-100 overflow-hidden shadow-sm md:shadow-md lg:shadow-xl px-5 py-2`}
                 style={{boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)"}}>
-                    <div className="flex flex-row md:text-center xl:text-start md:flex-col xl:flex-row gap-4 items-center">
+                    <div className="flex  md:text-center xl:text-start flex-col sm:flex-col lg:flex-row xl:flex-row gap-4 items-center">
                         <div className="flex items-center h-fit bg-gray-100 rounded-full p-5">
                             <img className=" object-cover w-12 " src={service.serviceIcon} alt={service.serviceIconAlt} />
                         </div>
-                        <div className="">
+                        <div className=" text-center  md:text-center lg:text-start">
                             <div className="  font-semibold">{service.serviceName}</div>
                             <p className=" text-gray-700">{service.serviceInfo}</p>
                         </div>

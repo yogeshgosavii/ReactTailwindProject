@@ -42,7 +42,7 @@ function Content({ className }) {
   const [selectedNav, setSelectedNav] = useState(0);
 
   return (
-    <div className={`${className} flex gap-8 justify-center w-full px-10 max-w-screen-xl`}>
+    <div className={`${className} flex gap-8 justify-center w-full  max-w-screen-xl`}>
       <div className='w-28 md:w-64'>
         {navs.map((nav, index) => (
           <p

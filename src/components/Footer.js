@@ -5,7 +5,7 @@ import { text_color } from '../constants/constants';
 
 function Footer({ className }) {
   return (
-    <footer className={`px-6 md:px-20 py-20 ${className} text-${text_color}`}>
+    <footer className={`px-6 md:px-20  md:py-8 mt-10 ${className} text-${text_color}`}>
       <div>
         <img className='h-8 md:h-12' src={logo} alt='PayPal Logo'/>
       </div>
@@ -22,7 +22,7 @@ function Footer({ className }) {
         </nav>
         <img className='h-6 w-6' src={flag} alt='Flag'/>
       </div>
-      <div className='flex flex-col sm:flex-row justify-between font-bold gap-12 py-5'>
+      <div className='flex flex-col xl:flex-row justify-between font-bold gap-12 py-5'>
         <nav className='flex gap-4 flex-wrap'>
           <a href='aboutLink'>About</a>
           <a href='newsRoomLink'>Newsroom</a>
