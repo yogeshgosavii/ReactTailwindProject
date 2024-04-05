@@ -60,7 +60,7 @@ function Content({ className }) {
       <div className='lg:flex flex-col font-semibold w-64 p-5 rounded-xl h-fit hidden bg-gray-100 text-center items-center justify-center'
         style={{ boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)" }}>
         <p>Get customized help with your account and access your message center</p>
-        <BorderedButton text={"Log In"} className={`h-8 text-nowrap px-2 w-fit text-center mt-5 flex border-${text_color} text-${text_color}`} />
+        <BorderedButton text={"Log In"} className={`h-10 w-28 text-nowrap px-2 text-center mt-5 flex items-center justify-center border-blue-800 text-${text_color}`} />
       </div>
     </div>
   );
