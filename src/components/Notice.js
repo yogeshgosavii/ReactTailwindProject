@@ -14,7 +14,7 @@ function Notice({ className,iconColor, icon, ...props }) {
           <div className='absolute w-full flex justify-end -translate-y-9 -translate-x-10 sm:hidden'>
             <svg
               onClick={handleClose}
-              className={`h-7 bg-green-100 w-fit text-gray-500 p-1.5 rounded-full  cursor-pointer `}
+              className={`h-7 bg-gray-100 w-fit text-gray-500 p-1.5 rounded-full  cursor-pointer `}
               viewBox="0 0 24 24"
               stroke="currentColor"
               aria-label="Close notice"
